@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace gym_Entidades.Modelos
+namespace gym_BDRepositorios.Modelos
 {
     public partial class HistorialCorporal
     {

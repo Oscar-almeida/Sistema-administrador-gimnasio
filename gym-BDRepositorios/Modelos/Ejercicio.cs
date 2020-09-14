@@ -1,26 +1,26 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace gym_Entidades.Modelos
+namespace gym_BDRepositorios.Modelos
 {
-    public partial class Inventario
+    public partial class Ejercicio
     {
-        public Inventario()
+        public Ejercicio()
         {
             EjercicioInventario = new HashSet<EjercicioInventario>();
-            HistorialInventario = new HashSet<HistorialInventario>();
+            RutinaEjercicio = new HashSet<RutinaEjercicio>();
         }
 
         public int Id { get; set; }
         public string Nombre { get; set; }
         public string Descripcion { get; set; }
-        public int CantidadTotal { get; set; }
-        public int CantidadDisponible { get; set; }
         public string Imagen { get; set; }
         public DateTime FechaCreacion { get; set; }
         public DateTime FechaModificacion { get; set; }
+        public int MusculoId { get; set; }
 
+        public virtual Musculo Musculo { get; set; }
         public virtual ICollection<EjercicioInventario> EjercicioInventario { get; set; }
-        public virtual ICollection<HistorialInventario> HistorialInventario { get; set; }
+        public virtual ICollection<RutinaEjercicio> RutinaEjercicio { get; set; }
     }
 }

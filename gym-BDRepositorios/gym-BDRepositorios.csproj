@@ -6,7 +6,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Modelos\" />
     <Folder Include="Repositorios\" />
     <Folder Include="Persistencia\" />
   </ItemGroup>

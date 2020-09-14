@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace sag_Modelos
+namespace gym_Entidades.Modelos
 {
     public partial class Ejercicio
     {
